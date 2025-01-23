@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 declare type SearchParamProps = {
   params: Promise<{ [key: string]: string }>; // Wrap params in a Promise
-  searchParams?: { [key: string]: string | string[] | undefined };
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 declare type AccessType = ["room:write"] | ["room:read", "room:presence:write"];
