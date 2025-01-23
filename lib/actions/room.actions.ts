@@ -100,7 +100,7 @@ export const updateDocumentAccess = async ({ roomId, email, userType, updatedBy 
         subjectId: notificationId,
         activityData: {
           userType,
-          title: `You have been granted ${userType} access to the document bt ${updatedBy.name}`,
+          title: `You have been granted ${userType} access to the document by ${updatedBy.name}`,
           updatedBy: updatedBy.name,
           avatar: updatedBy.avatar,
           email: updatedBy.email
