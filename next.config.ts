@@ -3,10 +3,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // to ignore typescript errors during our build
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   //for clerk configurations
   images: {
     remotePatterns: [{
