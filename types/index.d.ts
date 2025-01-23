@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 declare type SearchParamProps = {
-  params: {
-    id: string; // Explicitly declare `id` as a required string
-  };
+  params: Promise<{ [key: string]: string }>; // Wrap params in a Promise
   searchParams?: { [key: string]: string | string[] | undefined };
 };
 
